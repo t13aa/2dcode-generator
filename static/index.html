@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>二次元コード生成ツール</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <h1>二次元コード生成ツール</h1>
+    <form id="form" class="form">
+      <input type="text" id="text-input" placeholder="URLやテキストを入力" required>
+      <button type="submit">生成</button>
+    </form>
+
+    <img id="result-image" class="code-image" height="300" width="300">
+
+    <section>
+      <h2>生成履歴(最大10件)</h2>
+      <button id="clear-btn" class="clear-button">クリア</button>
+      <div id="history-list" class="history-list"></div>
+    </section>
+  </main>
+
+  <template id="history-template">
+    <details name="history">
+      <summary>
+        <img class="history-thumb">
+        <span class="history-text"></span>
+      </summary>
+      <img class="code-image" height="300" width="300">
+    </details>
+  </template>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

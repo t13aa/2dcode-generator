@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap');
+
+:root {
+  --color-primary: #fdd8ef;
+  --color-secondary: #c0e8fd;
+
+  --color-border: #eee
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main,
+button {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+
+img:not([src]) {
+  display: none;
+}
+
+main {
+  max-width: 800px;
+  margin-inline: auto;
+  color: #333;
+  min-height: 100dvh;
+  padding: 1rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-block: 3rem 1.5rem;
+}
+
+.form {
+  text-align: center;
+
+  input {
+    padding: 0 1.5rem;
+    min-height: 3rem;
+    border-width: 2px 4px 4px 2px;
+    border-color: var(--color-border);
+    border-radius: 1.5rem;
+
+    border-style: solid;
+    flex: 1;
+    font-size: 1rem;
+
+    &:focus-visible {
+      outline: 3px solid skyblue;
+    }
+  }
+
+  button {
+    background-color: var(--color-primary);
+    padding: 0 3rem;
+    border-style: solid;
+
+    border-radius: 1.5rem;
+    border: none;
+    font-size: small;
+    font-weight: 700;
+    min-height: 3rem;
+  }
+}
+
+.code-image {
+  image-rendering: pixelated;
+  display: block;
+  margin: 2rem auto;
+}
+
+details:not(:last-child) {
+  border-bottom: dotted 2px var(--color-secondary);
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.25rem;
+  margin-block: 2rem 1rem;
+}
+
+.clear-button {
+  color: red;
+  background-color: #fff;
+  font-size: .8125rem;
+  font-weight: 700;
+  border: none;
+  min-height: 3rem;
+  padding: 0;
+
+  margin-inline-start: auto;
+  display: block;
+}
+
+.empty-message {
+  color: #666;
+  text-align: center;
+}
+
+summary {
+  display: flex;
+  gap: .25rem;
+  align-items: center;
+  padding: .5rem;
+}
+
+.history-thumb {
+  aspect-ratio: 1/1;
+  height: 3rem;
+}
+
+.history-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
